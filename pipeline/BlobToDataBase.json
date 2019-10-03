@@ -71,11 +71,6 @@
 				}
 			}
 		],
-		"variables": {
-			"fileName": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }

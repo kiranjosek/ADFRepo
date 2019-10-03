@@ -82,11 +82,20 @@
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"tableName": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [],
 				"typeProperties": {
-					"schema": "kiran"
+					"schema": "kiran",
+					"table": {
+						"value": "@dataset().tableName",
+						"type": "Expression"
+					}
 				}
 			},
 			"dependsOn": [
@@ -195,14 +204,7 @@
 										},
 										"sink": {
 											"type": "AzureSqlSink",
-											"sqlWriterStoredProcedureName": {
-												"value": "@replace(variables('filename'),'.csv','')",
-												"type": "Expression"
-											},
-											"tableOption": {
-												"value": "@replace(variables('filename'),'.csv','')",
-												"type": "Expression"
-											},
+											"tableOption": "autoCreate",
 											"disableMetricsCollection": false
 										},
 										"enableStaging": false
@@ -218,7 +220,9 @@
 										{
 											"referenceName": "AzureSqlTable1",
 											"type": "DatasetReference",
-											"parameters": {}
+											"parameters": {
+												"tableName": "@replace(variables('filename'),'.csv','')"
+											}
 										}
 									]
 								}

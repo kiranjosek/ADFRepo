@@ -18,15 +18,21 @@
 					"storedProcedureName": "[dbo].[kiran_Usp_ExceptionLog]",
 					"storedProcedureParameters": {
 						"PipelineName": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().Pipeline",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"runid": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().RunId",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"TableName": {
-							"value": "",
+							"value": "Kiran",
 							"type": "String"
 						}
 					}

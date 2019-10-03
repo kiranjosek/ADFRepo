@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "KiranADFWithRepo"
 		},
-		"AzureBlobStorage13_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage13'"
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,8 +38,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureBlobStorage13_connectionString": {
-						"value": "[parameters('AzureBlobStorage13_connectionString')]"
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					}
 				}
 			},

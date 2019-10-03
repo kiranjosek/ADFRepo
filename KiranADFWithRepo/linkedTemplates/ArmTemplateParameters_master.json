@@ -5,7 +5,7 @@
 		"factoryName": {
 			"value": "KiranADFWithRepo"
 		},
-		"AzureBlobStorage13_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
 		"containerUri": {

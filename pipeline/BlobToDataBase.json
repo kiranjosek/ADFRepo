@@ -46,6 +46,7 @@
 						]
 					}
 				],
+				"userProperties": [],
 				"typeProperties": {
 					"items": {
 						"value": "@activity('Get Metadata1').output.childItems",
@@ -57,15 +58,18 @@
 							"name": "filename",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": ""
+							}
 						}
 					]
 				}
 			}
 		],
-		"parameters": {
+		"variables": {
 			"fileName": {
-				"type": "string"
+				"type": "String"
 			}
 		},
 		"annotations": []

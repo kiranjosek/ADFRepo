@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LoookkUUPPError",
+				"name": "Lookup1",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -28,7 +28,7 @@
 						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": true
+					"firstRowOnly": false
 				}
 			}
 		],

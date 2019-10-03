@@ -97,14 +97,7 @@
 								},
 								"sink": {
 									"type": "AzureSqlSink",
-									"sqlWriterStoredProcedureName": {
-										"value": "@replace(variables('filename'),'.csv','')",
-										"type": "Expression"
-									},
-									"tableOption": {
-										"value": "@replace(variables('filename'),'.csv','')",
-										"type": "Expression"
-									},
+									"tableOption": "autoCreate",
 									"disableMetricsCollection": false
 								},
 								"enableStaging": false
@@ -118,7 +111,10 @@
 							"outputs": [
 								{
 									"referenceName": "AzureSqlTable1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"tableName": "@replace(variables('filename'),'.csv','')"
+									}
 								}
 							]
 						}

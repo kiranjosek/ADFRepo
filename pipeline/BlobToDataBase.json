@@ -55,7 +55,7 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "filename",
+							"name": "file name",
 							"type": "SetVariable",
 							"dependsOn": [],
 							"userProperties": [],

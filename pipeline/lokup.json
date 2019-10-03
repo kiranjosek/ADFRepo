@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "LoookkUUPPError",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderStoredProcedureName": "[dbo].[GetSales]",
+						"sqlReaderStoredProcedureName": "[dbo].[GetSalesTraining]",
 						"storedProcedureParameters": {
 							"pcat": {
 								"type": "String"
@@ -28,7 +28,7 @@
 						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
 				}
 			}
 		],
